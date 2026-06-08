@@ -1,0 +1,10 @@
+name = "djani-wire"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Feed storage. Create a KV namespace in the dashboard
+# (Storage & databases → KV → Create), paste its ID below,
+# OR bind it in the Pages project under Settings → Bindings.
+[[kv_namespaces]]
+binding = "WIRE_KV"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
