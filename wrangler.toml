@@ -7,4 +7,4 @@ pages_build_output_dir = "dist"
 # OR bind it in the Pages project under Settings → Bindings.
 [[kv_namespaces]]
 binding = "WIRE_KV"
-id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+id = "317e27f0a2e4473da0cbe1de21753cd4"
