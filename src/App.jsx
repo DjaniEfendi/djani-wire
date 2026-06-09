@@ -470,7 +470,7 @@ export default function App() {
       <header className="wire-head">
         <div className="head-inner">
           <div className="brand">
-            <span className="brand-mark">DJANI</span>
+            <span className="brand-mark">DJANI EFENDI</span>
             <span className="brand-slash">{"\u2044\u2044"}</span>
             <span className="brand-name">THE WIRE</span>
           </div>
