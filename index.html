@@ -3,21 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Keep your own favicon line(s) here -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- ===== Primary meta ===== -->
     <title>Djani Efendi — The Wire</title>
-    <meta
-      name="description"
-      content="Djani Efendi — a live feed of what I'm reading: markets, AI, semiconductors, geopolitics, and everything between."
-    />
-    <meta property="og:title" content="Djani Efendi — The Wire" />
-    <meta
-      property="og:description"
-      content="Djani Efendi — a live feed of what I'm reading: markets, AI, semiconductors, geopolitics, and everything between."
-    />
+    <meta name="description" content="Djani Efendi — private equity, technology and AI infrastructure. The Wire is a live feed of what I'm reading across markets, machines, and everything between." />
+    <link rel="canonical" href="https://djaniefendi.com/" />
+
+    <!-- ===== Open Graph (LinkedIn / Slack / Facebook previews) ===== -->
     <meta property="og:type" content="website" />
-    <meta name="author" content="Djani Efendi" />
+    <meta property="og:title" content="Djani Efendi — The Wire" />
+    <meta property="og:description" content="A live feed of what Djani Efendi is reading across markets, machines, and everything between." />
+    <meta property="og:url" content="https://djaniefendi.com/" />
+    <meta property="og:site_name" content="Djani Efendi // The Wire" />
+    <meta property="og:image" content="https://djaniefendi.com/og-image.png" />
+
+    <!-- ===== Twitter / X card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Djani Efendi — The Wire" />
+    <meta name="twitter:description" content="A live feed of what Djani Efendi is reading across markets, machines, and everything between." />
+    <meta name="twitter:image" content="https://djaniefendi.com/og-image.png" />
+    <!-- once you have an X handle, add: <meta name="twitter:creator" content="@yourhandle" /> -->
+
+    <!-- ===== Person structured data (the entity signal) ===== -->
+    <!-- VERIFY each sameAs URL is your exact live profile before shipping. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Djani Efendi",
+      "url": "https://djaniefendi.com/",
+      "jobTitle": "Private Equity — Technology & AI Infrastructure",
+      "worksFor": { "@type": "Organization", "name": "Centricus" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" },
+      "knowsAbout": ["Private equity", "Artificial intelligence", "Semiconductors", "Private markets", "Crypto"],
+      "sameAs": [
+        "https://www.linkedin.com/in/djaniefendi/",
+        "https://www.youtube.com/channel/UCTaaBk2gjTEKiCJu3Wr4WEg",
+        "https://independent.academia.edu/DjaniEfendi"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Keep YOUR existing entry script. This is the Vite + React default;
+         yours may be /src/main.tsx, /src/index.jsx, etc. Do not change it
+         unless it differs. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
