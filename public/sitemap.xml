@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The Wire is a single-page feed — every dispatch renders on "/", loaded at
+  runtime from /api/feed. There are no per-article routes, so the root is the
+  only URL to list. If routed permalinks are ever added, list them here too.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://djaniefendi.news/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

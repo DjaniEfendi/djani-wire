@@ -8,42 +8,67 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- ===== Primary meta ===== -->
-    <title>Djani Efendi — The Wire</title>
+    <title>The Wire — Djani Efendi</title>
     <meta name="description" content="Djani Efendi — private equity, technology and AI infrastructure. The Wire is a live feed of what I'm reading across markets, machines, and everything between." />
-    <link rel="canonical" href="https://djaniefendi.com/" />
+    <link rel="canonical" href="https://djaniefendi.news/" />
 
     <!-- ===== Open Graph (LinkedIn / Slack / Facebook previews) ===== -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Djani Efendi — The Wire" />
+    <meta property="og:title" content="The Wire — Djani Efendi" />
     <meta property="og:description" content="A live feed of what Djani Efendi is reading across markets, machines, and everything between." />
-    <meta property="og:url" content="https://djaniefendi.com/" />
+    <meta property="og:url" content="https://djaniefendi.news/" />
     <meta property="og:site_name" content="Djani Efendi // The Wire" />
-    <meta property="og:image" content="https://djaniefendi.com/og-image.png" />
+    <meta property="og:image" content="https://djaniefendi.news/og-image.png" />
 
     <!-- ===== Twitter / X card ===== -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Djani Efendi — The Wire" />
+    <meta name="twitter:title" content="The Wire — Djani Efendi" />
     <meta name="twitter:description" content="A live feed of what Djani Efendi is reading across markets, machines, and everything between." />
-    <meta name="twitter:image" content="https://djaniefendi.com/og-image.png" />
+    <meta name="twitter:image" content="https://djaniefendi.news/og-image.png" />
     <!-- once you have an X handle, add: <meta name="twitter:creator" content="@yourhandle" /> -->
 
     <!-- ===== Person structured data (the entity signal) ===== -->
-    <!-- VERIFY each sameAs URL is your exact live profile before shipping. -->
+    <!-- The @id below is the shared entity anchor used by djaniefendi.com,
+         djaniefendi.news and djaniefendi.org. It must stay byte-identical
+         across all three sites — do not change it, even though this site
+         is served from djaniefendi.news. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://djaniefendi.com/#person",
       "name": "Djani Efendi",
       "url": "https://djaniefendi.com/",
       "jobTitle": "Private Equity — Technology & AI Infrastructure",
       "worksFor": { "@type": "Organization", "name": "Centricus" },
-      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Cass Business School" },
+        { "@type": "CollegeOrUniversity", "name": "University of East Anglia" }
+      ],
+      "description": "Private Equity Associate at Centricus in London, covering technology and AI infrastructure. Currently reading for an MSc in Computer and Information Technology at the University of Pennsylvania (in progress).",
       "knowsAbout": ["Private equity", "Artificial intelligence", "Semiconductors", "Private markets", "Crypto"],
       "sameAs": [
-        "https://www.linkedin.com/in/djaniefendi/",
+        "https://djaniefendi.com",
+        "https://djaniefendi.org",
+        "https://www.linkedin.com/in/djaniefendi",
+        "https://github.com/djaniefendi",
         "https://www.youtube.com/channel/UCTaaBk2gjTEKiCJu3Wr4WEg",
         "https://independent.academia.edu/DjaniEfendi"
       ]
+    }
+    </script>
+
+    <!-- ===== WebSite structured data ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://djaniefendi.news/#website",
+      "name": "The Wire",
+      "url": "https://djaniefendi.news",
+      "about": { "@id": "https://djaniefendi.com/#person" },
+      "publisher": { "@id": "https://djaniefendi.com/#person" },
+      "inLanguage": "en"
     }
     </script>
   </head>

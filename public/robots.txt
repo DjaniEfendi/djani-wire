@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# JSON and owner-only endpoints — nothing to index.
+# /api/file/ is deliberately left crawlable: it serves the images and PDFs
+# embedded in the feed.
+Disallow: /api/auth
+Disallow: /api/feed
+Disallow: /api/preview
+Disallow: /api/upload
+
+Sitemap: https://djaniefendi.news/sitemap.xml

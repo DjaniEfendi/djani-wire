@@ -736,7 +736,9 @@ export default function App() {
         <span className="sep">{"\u00b7"}</span>
         <span>links · video · images · pdfs</span>
         <span className="sep">{"\u00b7"}</span>
-        <span>djaniefendi.com</span>
+        <a className="foot-link" href="https://djaniefendi.com">djaniefendi.com</a>
+        <span className="sep">·</span>
+        <a className="foot-link" href="https://djaniefendi.org">djaniefendi.org</a>
       </footer>
     </div>
   );
@@ -875,6 +877,8 @@ body{ background:#0b0b0e; }
 .empty-sub{ font-family:var(--serif); font-style:italic; font-size:15px; max-width:360px; margin:0 auto; line-height:1.55; }
 
 .wire-foot{ max-width:760px; margin:0 auto; padding:22px; border-top:1px solid var(--line); display:flex; gap:9px; flex-wrap:wrap; font-size:10px; letter-spacing:.12em; color:var(--faint); }
+.foot-link{ color:var(--dim); text-decoration:none; transition:color .16s; }
+.foot-link:hover{ color:var(--amber); }
 
 .drop-overlay{ position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center; pointer-events:none; opacity:0; transition:opacity .2s; background:rgba(11,11,14,.82); backdrop-filter:blur(3px); }
 .drop-overlay.on{ opacity:1; }
