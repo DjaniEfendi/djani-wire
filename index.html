@@ -71,9 +71,56 @@
       "inLanguage": "en"
     }
     </script>
+
+    <!-- Base styling lives in the React bundle. These few rules are static so the
+         page is dark before the bundle loads, and so the noscript bio below is
+         legible without JavaScript. -->
+    <style>
+      body { margin: 0; background: #0b0b0e; color: #ECEAE3; }
+      .noscript-bio {
+        max-width: 44rem;
+        margin: 8vh auto;
+        padding: 0 22px;
+        font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+        font-size: 17px;
+        line-height: 1.65;
+      }
+      .noscript-bio h1 {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 19px;
+        letter-spacing: 0.16em;
+        color: #ECEAE3;
+      }
+      .noscript-bio a { color: #FFB000; }
+      .noscript-bio .sub {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        color: #FFB000;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+
+    <noscript>
+      <div class="noscript-bio">
+        <h1>DJANI EFENDI</h1>
+        <p class="sub">The Wire</p>
+        <p>
+          The Wire is a live feed of what Djani Efendi is reading across markets,
+          machines, and everything between. The feed itself requires JavaScript;
+          the links below do not.
+        </p>
+        <p>
+          Djani Efendi is a Private Equity Associate at Centricus in London, where his
+          coverage focuses on technology and AI infrastructure. His personal index is
+          at <a href="https://djaniefendi.com">djaniefendi.com</a> and his research
+          archive at <a href="https://djaniefendi.org">djaniefendi.org</a>.
+        </p>
+      </div>
+    </noscript>
 
     <!-- Keep YOUR existing entry script. This is the Vite + React default;
          yours may be /src/main.tsx, /src/index.jsx, etc. Do not change it
